@@ -76,7 +76,6 @@ function Todo() {
                 ))}
             </div>
 
-            {/* Alert Modal */}
             {alertModal && (
                 <div className="absolute z-10 p-5 rounded-lg shadow-lg border border-gray-300 bg-white" style={{ top: '20%', left: '50%', transform: 'translate(-50%, -20%)' }}>
                     <p className="mb-4">Task title cannot be empty!</p>
@@ -84,7 +83,6 @@ function Todo() {
                 </div>
             )}
 
-            {/* Delete Confirmation Modal */}
             {deleteModal !== null && (
                 <div className="absolute z-10 p-5 rounded-lg shadow-lg border border-gray-300 bg-white" style={{ top: '20%', left: '50%', transform: 'translate(-50%, -20%)' }}>
                     <p className="mb-4">Are you sure you want to delete this task?</p>
@@ -95,7 +93,6 @@ function Todo() {
                 </div>
             )}
 
-            {/* Edit Modal */}
             {editModal !== null && (
                 <div className="absolute z-10 p-5 rounded-lg shadow-lg border border-gray-300 bg-white" style={{ top: '20%', left: '50%', transform: 'translate(-50%, -20%)' }}>
                     <p className="mb-2">Edit Task</p>
